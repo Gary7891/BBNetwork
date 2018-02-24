@@ -40,7 +40,7 @@ NSString *const kBBNetworkErrorDomain      = @"cn.timeface.base.network";
 }
 
 - (NSTimeInterval)requestTimeoutInterval {
-    return 60;
+    return 10;
 }
 
 - (id)requestArgument {

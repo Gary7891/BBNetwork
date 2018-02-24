@@ -27,7 +27,8 @@
 @property (strong, nonatomic, readonly) NSArray *urlFilters;
 @property (strong, nonatomic, readonly) NSArray *cacheDirPathFilters;
 @property (strong, nonatomic) AFSecurityPolicy *securityPolicy;
-@property (strong, nonatomic) BBRequestCompletionBlock commonCompletionBlock;
+@property (strong, nonatomic) BBRequestCompletionBlock  commonCompletionBlock;
+@property (strong, nonatomic) BBRequestCommonFaildBlock commonFaildBlock;
 @property (assign, nonatomic) NSInteger maxCurrentRequestCount;
 
 - (void)addUrlFilter:(id<BBUrlFilterProtocol>)filter;

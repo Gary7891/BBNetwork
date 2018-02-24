@@ -321,6 +321,9 @@
             if (request.delegate != nil) {
                 [request.delegate requestFailed:request];
             }
+            if ([BBNetworkConfig sharedInstance].commonFaildBlock) {
+                [BBNetworkConfig sharedInstance].commonFaildBlock(request);
+            }
             if (request.failureCompletionBlock) {
                 request.failureCompletionBlock(request);
             }

@@ -57,6 +57,8 @@ typedef void (^AFConstructingBlock)(id<AFMultipartFormData> formData);
 
 typedef void(^BBRequestCompletionBlock)(__kindof BBBaseRequest *request);
 
+typedef void (^BBRequestCommonFaildBlock)(__kindof BBBaseRequest *request);
+
 @protocol BBRequestDelegate <NSObject>
 
 @optional

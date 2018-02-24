@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BBNetwork"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "iOS底层网络框架"
   s.homepage     = "https://git.tticar.com/tticar/BBNetwork"
   s.license      = "Copyright (C) 2016 Gary, Inc.  All rights reserved."
